@@ -24,6 +24,7 @@ import {
   NARROW_SIDEBAR_WIDTH,
   Path,
   REPO_URL,
+  APP_NAME,
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -250,7 +251,7 @@ export function SideBar(props: { className?: string }) {
       {...props}
     >
       <SideBarHeader
-        title="NextChat"
+        title={APP_NAME}
         subTitle="Build your own AI assistant."
         logo={<ChatGptIcon />}
         shouldNarrow={shouldNarrow}
